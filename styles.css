@@ -1,0 +1,123 @@
+body {
+    background-color: #00b7ff; 
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+ }
+ 
+ img {
+     height: 42px;
+     width: 254px;
+ }
+ 
+ .knobs button {
+     background-color:white;
+     color: black;
+     font: 700 15px Verdana, Helvetica, sans-serif;
+     display: inline-block;
+     height: 65px;
+     width: 65px;
+     border-radius: 50%;
+     margin-left:23px;
+     margin-right:23px;
+     box-shadow: inset -2px -2px 4px 1px black, inset 2px 2px 4px 1px silver, 2px 2px 5px 1px;
+ }
+ 
+ .knobs {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 64px;
+ }
+ 
+ .main {
+     height:500px;
+     width: 800px;
+     margin-top: 23px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #c40000;
+     border-radius: 5%;
+     box-shadow: 6px 6px 20px 5px, inset 6px 6px 15px 3px pink, inset -6px -6px 15px 3px;
+ }
+ 
+ .container {
+     height:360px;
+     width: 650px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: rgb(166, 166, 166);
+     box-shadow: 3px 3px 15px 0px pink, -3px -3px 20px 1px;
+     position:relative;
+     top:60px;
+     overflow: hidden;
+ }
+ 
+ .squareStyle {
+     background-color: rgb(166, 166, 166);
+     filter: brightness(1);
+     display: inline-block;
+ }    
+ 
+ .rowStyle {
+     width: 650px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .option {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .option button {
+     background-color: #c40000;
+     color: white;
+     font-family: Verdana, Helvetica, sans-serif;
+     font-weight: bold;
+     display: inline-block;
+     height: 65px;
+     width: 108px;
+     border-radius: 16%;
+     margin-top: 20px;
+     margin-left: 80px;
+     margin-right:80px;    
+ }
+ 
+ .disabled {
+     box-shadow:  inset -2px -2px 4px 2px black, inset 2px 2px 3px 2px white, 2px 2px 5px 1px black;
+     font-size: 15px;
+ }
+ 
+ .selected {
+     box-shadow: inset 2px 2px 9px 2px black, 2px 2px 4px 1px white;
+     font-size: 14px;
+ }
+ 
+ .title {
+     margin-left:auto;
+     margin-right:auto;
+     margin-bottom: -40px;
+     width: 255px;
+     padding-top: 6px;
+     height: 30px;
+ }
+ 
+ .shake {
+     animation: shake .75s;
+     animation-iteration-count: 1;
+ }
+ 
+ @keyframes shake {
+     0% { transform: translate(1px, 1px) rotate(1deg);}
+     10% { transform: translate(-3px, -2px) rotate(-2deg);}
+     20% { transform: translate(4px, 2px) rotate(2deg);}
+     30% { transform: translate(-4px, -2px) rotate(-2deg);}
+     40% { transform: translate(4px, 2px) rotate(2deg);}
+     50% { transform: translate(-4px, -2px) rotate(-2deg);}
+     60% { transform: translate(4px, 2px) rotate(2deg);}
+     70% { transform: translate(-4px, -2px) rotate(-2deg);}
+     80% { transform: translate(-3px, 2px) rotate(2deg);}
+     90% { transform: translate(3px, -2px) rotate(-2deg);}
+     100% { transform: translate(-2px, 1px) rotate(1deg);}
+ }
