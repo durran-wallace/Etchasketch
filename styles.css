@@ -1,9 +1,8 @@
 body {
-    background-color: #00b7ff; 
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
+    background-image: url('images/blue-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
  }
  
  img {
